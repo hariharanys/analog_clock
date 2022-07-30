@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clock{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(6, 6, 97, 0.733);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock-face{
+    position: relative;
+    border: 5px solid #fff;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    transform: translateY(-3px);
+    
+}
+.hand{
+    width: 50%;
+    height: 3px;
+  
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all .5s;
+    transition-timing-function: ease-in-out;
+}
